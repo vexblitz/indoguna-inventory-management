@@ -1,0 +1,1742 @@
+INFO - 2024-07-29 03:04:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 03:58:57 --> Error: Class "App\Models\BarangMasukModel" not found
+[Method: GET, Route: barang-masuk]
+in APPPATH\Controllers\BarangMasuk.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\BarangMasuk->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+ERROR - 2024-07-29 03:59:02 --> mysqli_sql_exception: Table 'indogunadb.barang_keluar' doesn't exist in C:\xampp\htdocs\gudang\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\gudang\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\gudang\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\gudang\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\gudang\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\gudang\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\gudang\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\gudang\app\Controllers\BarangKeluar.php(19): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\gudang\system\CodeIgniter.php(933): App\Controllers\BarangKeluar->index()
+#8 C:\xampp\htdocs\gudang\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangKeluar))
+#9 C:\xampp\htdocs\gudang\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\gudang\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\gudang\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\gudang\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\gudang\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2024-07-29 03:59:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'indogunadb.barang_keluar' doesn't exist
+[Method: GET, Route: barang-keluar]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `barang_keluar`', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\BarangKeluar.php(19): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BarangKeluar->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangKeluar))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+CRITICAL - 2024-07-29 03:59:02 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'indogunadb.barang_keluar' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `barang_keluar`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `barang_keluar`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `barang_keluar`', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\BarangKeluar.php(19): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BarangKeluar->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangKeluar))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+CRITICAL - 2024-07-29 03:59:02 --> [Caused by] mysqli_sql_exception: Table 'indogunadb.barang_keluar' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `barang_keluar`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `barang_keluar`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `barang_keluar`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `barang_keluar`', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\BarangKeluar.php(19): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BarangKeluar->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangKeluar))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+CRITICAL - 2024-07-29 04:11:03 --> Error: Class "App\Models\BarangMasukModel" not found
+[Method: GET, Route: barang-masuk]
+in APPPATH\Controllers\BarangMasuk.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\BarangMasuk->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+CRITICAL - 2024-07-29 04:28:34 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "barang_masuk/components/sidebar.php"
+[Method: GET, Route: laporan-barang]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('barang_masuk/components/sidebar.php')
+ 2 SYSTEMPATH\View\View.php(487): CodeIgniter\View\View->render('barang_masuk/components/sidebar', null, true)
+ 3 APPPATH\Views\laporan-barang\layouts\main.php(41): CodeIgniter\View\View->include('barang_masuk/components/sidebar')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\layouts\\main.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/layouts/main', [], true)
+ 7 APPPATH\Controllers\LaporanBarang.php(20): view('laporan-barang/layouts/main', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+CRITICAL - 2024-07-29 04:29:07 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "barang_masuk/components/sidebar.php"
+[Method: GET, Route: laporan-barang]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('barang_masuk/components/sidebar.php')
+ 2 SYSTEMPATH\View\View.php(487): CodeIgniter\View\View->render('barang_masuk/components/sidebar', null, true)
+ 3 APPPATH\Views\laporan-barang\layouts\main.php(41): CodeIgniter\View\View->include('barang_masuk/components/sidebar')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\layouts\\main.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/layouts/main', [], true)
+ 7 APPPATH\Controllers\LaporanBarang.php(20): view('laporan-barang/layouts/main', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+CRITICAL - 2024-07-29 04:29:08 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "barang_masuk/components/sidebar.php"
+[Method: GET, Route: laporan-barang]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('barang_masuk/components/sidebar.php')
+ 2 SYSTEMPATH\View\View.php(487): CodeIgniter\View\View->render('barang_masuk/components/sidebar', null, true)
+ 3 APPPATH\Views\laporan-barang\layouts\main.php(41): CodeIgniter\View\View->include('barang_masuk/components/sidebar')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\layouts\\main.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/layouts/main', [], true)
+ 7 APPPATH\Controllers\LaporanBarang.php(20): view('laporan-barang/layouts/main', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+CRITICAL - 2024-07-29 04:29:12 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "barang_masuk/components/sidebar.php"
+[Method: GET, Route: laporan-barang]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('barang_masuk/components/sidebar.php')
+ 2 SYSTEMPATH\View\View.php(487): CodeIgniter\View\View->render('barang_masuk/components/sidebar', null, true)
+ 3 APPPATH\Views\laporan-barang\layouts\main.php(41): CodeIgniter\View\View->include('barang_masuk/components/sidebar')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\layouts\\main.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/layouts/main', [], true)
+ 7 APPPATH\Controllers\LaporanBarang.php(20): view('laporan-barang/layouts/main', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+CRITICAL - 2024-07-29 04:30:08 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "barang_masuk/components/sidebar.php"
+[Method: GET, Route: laporan-barang]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('barang_masuk/components/sidebar.php')
+ 2 SYSTEMPATH\View\View.php(487): CodeIgniter\View\View->render('barang_masuk/components/sidebar', null, true)
+ 3 APPPATH\Views\laporan-barang\layouts\main.php(41): CodeIgniter\View\View->include('barang_masuk/components/sidebar')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\layouts\\main.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/layouts/main', [], true)
+ 7 APPPATH\Controllers\LaporanBarang.php(20): view('laporan-barang/layouts/main', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+CRITICAL - 2024-07-29 04:30:09 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "barang_masuk/components/sidebar.php"
+[Method: GET, Route: laporan-barang]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('barang_masuk/components/sidebar.php')
+ 2 SYSTEMPATH\View\View.php(487): CodeIgniter\View\View->render('barang_masuk/components/sidebar', null, true)
+ 3 APPPATH\Views\laporan-barang\layouts\main.php(41): CodeIgniter\View\View->include('barang_masuk/components/sidebar')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\layouts\\main.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/layouts/main', [], true)
+ 7 APPPATH\Controllers\LaporanBarang.php(20): view('laporan-barang/layouts/main', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+CRITICAL - 2024-07-29 04:30:55 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "barang_masuk/components/sidebar.php"
+[Method: GET, Route: laporan-barang]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('barang_masuk/components/sidebar.php')
+ 2 SYSTEMPATH\View\View.php(487): CodeIgniter\View\View->render('barang_masuk/components/sidebar', null, true)
+ 3 APPPATH\Views\laporan-barang\layouts\main.php(41): CodeIgniter\View\View->include('barang_masuk/components/sidebar')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\layouts\\main.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/layouts/main', [], true)
+ 7 APPPATH\Controllers\LaporanBarang.php(20): view('laporan-barang/layouts/main', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+CRITICAL - 2024-07-29 05:14:25 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "barang_masuk/components/sidebar.php"
+[Method: GET, Route: kategori-barang]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('barang_masuk/components/sidebar.php')
+ 2 SYSTEMPATH\View\View.php(487): CodeIgniter\View\View->render('barang_masuk/components/sidebar', null, true)
+ 3 APPPATH\Views\kategori-barang\layouts\main.php(41): CodeIgniter\View\View->include('barang_masuk/components/sidebar')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\kategori-barang\\layouts\\main.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('kategori-barang/layouts/main', [], true)
+ 7 APPPATH\Controllers\KategoriBarang.php(22): view('kategori-barang/layouts/main', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KategoriBarang->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KategoriBarang))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+CRITICAL - 2024-07-29 05:14:30 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "barang_masuk/components/sidebar.php"
+[Method: GET, Route: kategori-barang]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('barang_masuk/components/sidebar.php')
+ 2 SYSTEMPATH\View\View.php(487): CodeIgniter\View\View->render('barang_masuk/components/sidebar', null, true)
+ 3 APPPATH\Views\kategori-barang\layouts\main.php(41): CodeIgniter\View\View->include('barang_masuk/components/sidebar')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\kategori-barang\\layouts\\main.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('kategori-barang/layouts/main', [], true)
+ 7 APPPATH\Controllers\KategoriBarang.php(22): view('kategori-barang/layouts/main', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KategoriBarang->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KategoriBarang))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+CRITICAL - 2024-07-29 05:14:40 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "barang_masuk/components/sidebar.php"
+[Method: GET, Route: satuan-barang]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('barang_masuk/components/sidebar.php')
+ 2 SYSTEMPATH\View\View.php(487): CodeIgniter\View\View->render('barang_masuk/components/sidebar', null, true)
+ 3 APPPATH\Views\satuan-barang\layouts\main.php(41): CodeIgniter\View\View->include('barang_masuk/components/sidebar')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\satuan-barang\\layouts\\main.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('satuan-barang/layouts/main', [], true)
+ 7 APPPATH\Controllers\SatuanBarang.php(22): view('satuan-barang/layouts/main', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SatuanBarang->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SatuanBarang))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+CRITICAL - 2024-07-29 05:14:53 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "barang_masuk/components/sidebar.php"
+[Method: GET, Route: kategori-barang]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('barang_masuk/components/sidebar.php')
+ 2 SYSTEMPATH\View\View.php(487): CodeIgniter\View\View->render('barang_masuk/components/sidebar', null, true)
+ 3 APPPATH\Views\kategori-barang\layouts\main.php(41): CodeIgniter\View\View->include('barang_masuk/components/sidebar')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\kategori-barang\\layouts\\main.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('kategori-barang/layouts/main', [], true)
+ 7 APPPATH\Controllers\KategoriBarang.php(22): view('kategori-barang/layouts/main', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KategoriBarang->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KategoriBarang))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+CRITICAL - 2024-07-29 05:15:47 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "kategori-barang/components/sidebar.php"
+[Method: GET, Route: kategori-barang]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('kategori-barang/components/sidebar.php')
+ 2 SYSTEMPATH\View\View.php(487): CodeIgniter\View\View->render('kategori-barang/components/sidebar', null, true)
+ 3 APPPATH\Views\kategori-barang\layouts\main.php(41): CodeIgniter\View\View->include('kategori-barang/components/sidebar')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\kategori-barang\\layouts\\main.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('kategori-barang/layouts/main', [], true)
+ 7 APPPATH\Controllers\KategoriBarang.php(22): view('kategori-barang/layouts/main', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KategoriBarang->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KategoriBarang))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+CRITICAL - 2024-07-29 05:16:19 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "kategori-barang/components/sidebar.php"
+[Method: GET, Route: kategori-barang]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('kategori-barang/components/sidebar.php')
+ 2 SYSTEMPATH\View\View.php(487): CodeIgniter\View\View->render('kategori-barang/components/sidebar', null, true)
+ 3 APPPATH\Views\kategori-barang\layouts\main.php(41): CodeIgniter\View\View->include('kategori-barang/components/sidebar')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\kategori-barang\\layouts\\main.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('kategori-barang/layouts/main', [], true)
+ 7 APPPATH\Controllers\KategoriBarang.php(22): view('kategori-barang/layouts/main', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KategoriBarang->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KategoriBarang))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+CRITICAL - 2024-07-29 05:16:19 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "kategori-barang/components/sidebar.php"
+[Method: GET, Route: kategori-barang]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('kategori-barang/components/sidebar.php')
+ 2 SYSTEMPATH\View\View.php(487): CodeIgniter\View\View->render('kategori-barang/components/sidebar', null, true)
+ 3 APPPATH\Views\kategori-barang\layouts\main.php(41): CodeIgniter\View\View->include('kategori-barang/components/sidebar')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\kategori-barang\\layouts\\main.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('kategori-barang/layouts/main', [], true)
+ 7 APPPATH\Controllers\KategoriBarang.php(22): view('kategori-barang/layouts/main', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KategoriBarang->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KategoriBarang))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+CRITICAL - 2024-07-29 05:16:45 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "kategori-barang/components/footer.php"
+[Method: GET, Route: kategori-barang]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('kategori-barang/components/footer.php')
+ 2 SYSTEMPATH\View\View.php(487): CodeIgniter\View\View->render('kategori-barang/components/footer', null, true)
+ 3 APPPATH\Views\kategori-barang\layouts\main.php(134): CodeIgniter\View\View->include('kategori-barang/components/footer')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\kategori-barang\\layouts\\main.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('kategori-barang/layouts/main', [], true)
+ 7 APPPATH\Controllers\KategoriBarang.php(22): view('kategori-barang/layouts/main', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KategoriBarang->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KategoriBarang))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+CRITICAL - 2024-07-29 05:17:08 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "kategori-barang/components/modal.php"
+[Method: GET, Route: kategori-barang]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('kategori-barang/components/modal.php')
+ 2 SYSTEMPATH\View\View.php(487): CodeIgniter\View\View->render('kategori-barang/components/modal', null, true)
+ 3 APPPATH\Views\kategori-barang\layouts\main.php(148): CodeIgniter\View\View->include('kategori-barang/components/modal')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\kategori-barang\\layouts\\main.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('kategori-barang/layouts/main', [], true)
+ 7 APPPATH\Controllers\KategoriBarang.php(22): view('kategori-barang/layouts/main', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KategoriBarang->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KategoriBarang))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 05:17:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 05:21:22 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "barang_masuk/components/sidebar.php"
+[Method: GET, Route: satuan-barang]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('barang_masuk/components/sidebar.php')
+ 2 SYSTEMPATH\View\View.php(487): CodeIgniter\View\View->render('barang_masuk/components/sidebar', null, true)
+ 3 APPPATH\Views\satuan-barang\layouts\main.php(41): CodeIgniter\View\View->include('barang_masuk/components/sidebar')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\satuan-barang\\layouts\\main.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('satuan-barang/layouts/main', [], true)
+ 7 APPPATH\Controllers\SatuanBarang.php(22): view('satuan-barang/layouts/main', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SatuanBarang->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SatuanBarang))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 05:21:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 05:23:16 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "laporan-barang/create.php"
+[Method: GET, Route: laporanbarang/create]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('laporan-barang/create.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/create', [], true)
+ 3 APPPATH\Controllers\LaporanBarang.php(25): view('laporan-barang/create')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+CRITICAL - 2024-07-29 05:23:50 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "laporan-barang/create.php"
+[Method: GET, Route: laporanbarang/create]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('laporan-barang/create.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/create', [], true)
+ 3 APPPATH\Controllers\LaporanBarang.php(25): view('laporan-barang/create')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+CRITICAL - 2024-07-29 05:24:16 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "laporan-barang/create.php"
+[Method: GET, Route: laporanbarang/create]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('laporan-barang/create.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/create', [], true)
+ 3 APPPATH\Controllers\LaporanBarang.php(25): view('laporan-barang/create')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+CRITICAL - 2024-07-29 05:24:20 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "laporanbarang/components/sidebar.php"
+[Method: GET, Route: laporan-barang]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('laporanbarang/components/sidebar.php')
+ 2 SYSTEMPATH\View\View.php(487): CodeIgniter\View\View->render('laporanbarang/components/sidebar', null, true)
+ 3 APPPATH\Views\laporan-barang\layouts\main.php(41): CodeIgniter\View\View->include('laporanbarang/components/sidebar')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\layouts\\main.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/layouts/main', [], true)
+ 7 APPPATH\Controllers\LaporanBarang.php(20): view('laporan-barang/layouts/main', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+CRITICAL - 2024-07-29 05:24:23 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "laporanbarang/components/sidebar.php"
+[Method: GET, Route: laporan-barang]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('laporanbarang/components/sidebar.php')
+ 2 SYSTEMPATH\View\View.php(487): CodeIgniter\View\View->render('laporanbarang/components/sidebar', null, true)
+ 3 APPPATH\Views\laporan-barang\layouts\main.php(41): CodeIgniter\View\View->include('laporanbarang/components/sidebar')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\layouts\\main.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/layouts/main', [], true)
+ 7 APPPATH\Controllers\LaporanBarang.php(20): view('laporan-barang/layouts/main', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+CRITICAL - 2024-07-29 06:40:11 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "laporanbarang/components/sidebar.php"
+[Method: GET, Route: laporan-barang]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('laporanbarang/components/sidebar.php')
+ 2 SYSTEMPATH\View\View.php(487): CodeIgniter\View\View->render('laporanbarang/components/sidebar', null, true)
+ 3 APPPATH\Views\laporan-barang\layouts\main.php(41): CodeIgniter\View\View->include('laporanbarang/components/sidebar')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\layouts\\main.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/layouts/main', [], true)
+ 7 APPPATH\Controllers\LaporanBarang.php(20): view('laporan-barang/layouts/main', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+CRITICAL - 2024-07-29 06:42:05 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "laporan-barang/create.php"
+[Method: GET, Route: laporanbarang/create]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('laporan-barang/create.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/create', [], true)
+ 3 APPPATH\Controllers\LaporanBarang.php(25): view('laporan-barang/create')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 06:43:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 06:43:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 06:55:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 07:00:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-07-29 07:14:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\LaporanBarang::$satuanbarangmodel is deprecated in APPPATH\Controllers\LaporanBarang.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\LaporanBarang->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+WARNING - 2024-07-29 07:14:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\LaporanBarang::$kategoribarangmodel is deprecated in APPPATH\Controllers\LaporanBarang.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\LaporanBarang->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 07:14:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 07:17:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 07:17:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 07:17:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 07:17:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 07:17:47 --> ErrorException: Undefined variable $kode_barang
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 56.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kode_barang', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 56)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(31): view('laporan-barang/components/action/create')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 07:18:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 07:18:48 --> ErrorException: Undefined variable $kode_barang
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 56.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kode_barang', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 56)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(32): view('laporan-barang/components/action/create')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 07:18:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 07:18:49 --> ErrorException: Undefined variable $kode_barang
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 56.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kode_barang', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 56)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(32): view('laporan-barang/components/action/create')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 07:23:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 07:23:11 --> ErrorException: Undefined variable $kode_barang
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 57.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kode_barang', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 57)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(32): view('laporan-barang/components/action/create')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 07:25:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 07:25:17 --> ErrorException: Undefined variable $kode_barang
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 57.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kode_barang', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 57)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(32): view('laporan-barang/components/action/create')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 07:25:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 07:25:18 --> ErrorException: Undefined variable $kode_barang
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 57.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kode_barang', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 57)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(32): view('laporan-barang/components/action/create')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 07:26:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 07:26:55 --> ErrorException: Undefined variable $kode_barang
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 57.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kode_barang', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 57)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(34): view('laporan-barang/components/action/create')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 07:26:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 07:26:57 --> ErrorException: Undefined variable $kode_barang
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 57.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kode_barang', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 57)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(34): view('laporan-barang/components/action/create')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 07:26:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 07:26:57 --> ErrorException: Undefined variable $kode_barang
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 57.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kode_barang', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 57)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(34): view('laporan-barang/components/action/create')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 07:27:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 07:27:09 --> ErrorException: Undefined variable $kode_barang
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 57.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kode_barang', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 57)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(35): view('laporan-barang/components/action/create')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 07:27:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 07:27:09 --> ErrorException: Undefined variable $kode_barang
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 57.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kode_barang', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 57)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(35): view('laporan-barang/components/action/create')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 07:27:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 07:27:10 --> ErrorException: Undefined variable $kode_barang
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 57.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kode_barang', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 57)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(35): view('laporan-barang/components/action/create')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 07:36:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 07:36:15 --> ErrorException: Undefined variable $kode_barang
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 57.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kode_barang', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 57)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(35): view('laporan-barang/components/action/create')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 07:37:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 07:37:05 --> ErrorException: Undefined variable $kode_barang
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 57.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kode_barang', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 57)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(35): view('laporan-barang/components/action/create')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 07:39:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 07:39:08 --> ErrorException: Undefined variable $kode_barang
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 57.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kode_barang', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 57)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(35): view('laporan-barang/components/action/create')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 07:39:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 07:39:31 --> ErrorException: Undefined variable $kode_barang
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 57.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kode_barang', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 57)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(35): view('laporan-barang/components/action/create')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 07:39:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 07:39:32 --> ErrorException: Undefined variable $kode_barang
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 57.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kode_barang', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 57)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(35): view('laporan-barang/components/action/create')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 07:39:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 07:39:32 --> ErrorException: Undefined variable $kode_barang
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 57.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kode_barang', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 57)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(35): view('laporan-barang/components/action/create')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 07:39:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 07:39:36 --> ErrorException: Undefined variable $kode_barang
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 57.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kode_barang', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 57)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(35): view('laporan-barang/components/action/create')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 07:40:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 07:40:46 --> ErrorException: Undefined variable $kode_barang
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 57.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kode_barang', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 57)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(35): view('laporan-barang/components/action/create')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 07:42:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 07:42:09 --> ErrorException: Undefined variable $kode_barang
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 57.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kode_barang', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 57)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(35): view('laporan-barang/components/action/create')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 07:43:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 07:43:03 --> ErrorException: Undefined variable $kode_barang
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 57.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kode_barang', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 57)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(35): view('laporan-barang/components/action/create')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 07:43:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 07:43:55 --> ErrorException: Undefined variable $kode_barang
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 57.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kode_barang', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 57)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(35): view('laporan-barang/components/action/create')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 07:46:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 07:46:40 --> ErrorException: Undefined variable $kode_barang
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 57.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kode_barang', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 57)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(35): view('laporan-barang/components/action/create')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 07:46:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 07:46:41 --> ErrorException: Undefined variable $kode_barang
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 57.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kode_barang', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 57)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(35): view('laporan-barang/components/action/create')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 07:46:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 07:46:42 --> ErrorException: Undefined variable $kode_barang
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 57.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kode_barang', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 57)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(35): view('laporan-barang/components/action/create')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 07:46:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 07:46:42 --> ErrorException: Undefined variable $kode_barang
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 57.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kode_barang', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 57)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(35): view('laporan-barang/components/action/create')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 07:46:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 07:46:42 --> ErrorException: Undefined variable $kode_barang
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 57.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kode_barang', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 57)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(35): view('laporan-barang/components/action/create')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 07:46:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 07:46:42 --> ErrorException: Undefined variable $kode_barang
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 57.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kode_barang', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 57)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(35): view('laporan-barang/components/action/create')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 07:46:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 07:46:42 --> ErrorException: Undefined variable $kode_barang
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 57.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kode_barang', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 57)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(35): view('laporan-barang/components/action/create')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 07:46:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 07:46:42 --> ErrorException: Undefined variable $kode_barang
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 57.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kode_barang', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 57)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(35): view('laporan-barang/components/action/create')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 07:46:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 07:46:42 --> ErrorException: Undefined variable $kode_barang
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 57.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kode_barang', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 57)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(35): view('laporan-barang/components/action/create')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 07:46:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 07:46:43 --> ErrorException: Undefined variable $kode_barang
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 57.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kode_barang', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 57)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(35): view('laporan-barang/components/action/create')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 07:46:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 07:46:43 --> ErrorException: Undefined variable $kode_barang
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 57.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kode_barang', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 57)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(35): view('laporan-barang/components/action/create')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 07:46:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 07:46:43 --> ErrorException: Undefined variable $kode_barang
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 57.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kode_barang', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 57)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(35): view('laporan-barang/components/action/create')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 07:46:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 07:46:43 --> ErrorException: Undefined variable $kode_barang
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 57.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kode_barang', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 57)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(35): view('laporan-barang/components/action/create')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 07:46:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 07:46:43 --> ErrorException: Undefined variable $kode_barang
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 57.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kode_barang', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 57)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(35): view('laporan-barang/components/action/create')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 07:46:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 07:46:44 --> ErrorException: Undefined variable $kode_barang
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 57.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kode_barang', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 57)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(35): view('laporan-barang/components/action/create')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 07:48:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 07:48:57 --> ErrorException: Undefined variable $kode_barang
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 57.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kode_barang', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 57)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(35): view('laporan-barang/components/action/create')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 07:49:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 07:49:32 --> ErrorException: Undefined variable $kode_barang
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 57.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kode_barang', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 57)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(35): view('laporan-barang/components/action/create')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 07:49:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 07:50:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 07:51:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 07:51:51 --> ErrorException: Undefined variable $kode_barang
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 57.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kode_barang', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 57)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(35): view('laporan-barang/components/action/create')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 07:56:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 07:56:28 --> ErrorException: Undefined variable $kode_barang
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 57.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kode_barang', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 57)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(35): view('laporan-barang/components/action/create')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 07:56:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 07:56:29 --> ErrorException: Undefined variable $kode_barang
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 57.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kode_barang', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 57)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(35): view('laporan-barang/components/action/create')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 07:56:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 07:56:29 --> ErrorException: Undefined variable $kode_barang
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 57.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kode_barang', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 57)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(35): view('laporan-barang/components/action/create')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 07:56:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 07:56:30 --> ErrorException: Undefined variable $kode_barang
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 57.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kode_barang', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 57)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(35): view('laporan-barang/components/action/create')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 07:59:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 07:59:11 --> ErrorException: Undefined variable $kode_barang
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 57.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kode_barang', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 57)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(33): view('laporan-barang/components/action/create')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 07:59:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 07:59:18 --> ErrorException: Undefined variable $kode_barang
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 57.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kode_barang', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 57)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(33): view('laporan-barang/components/action/create')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 08:00:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 08:00:21 --> ErrorException: Undefined variable $kode_barang
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 57.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kode_barang', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 57)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(33): view('laporan-barang/components/action/create')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 08:03:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 08:03:21 --> ErrorException: Undefined variable $kode_barang
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 57.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kode_barang', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 57)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(33): view('laporan-barang/components/action/create')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 08:05:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 08:05:15 --> ErrorException: Undefined variable $kode_barang
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 57.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kode_barang', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 57)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(33): view('laporan-barang/components/action/create')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 08:29:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 08:58:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 11:58:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 11:59:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 12:00:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 12:01:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 12:01:07 --> Error: Undefined constant "kode_barang"
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 57.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 4 APPPATH\Controllers\LaporanBarang.php(32): view('laporan-barang/components/action/create')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 12:01:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 12:02:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 12:03:40 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "laporan-barang/create.php"
+[Method: GET, Route: laporanbarang/create]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('laporan-barang/create.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/create', [], true)
+ 3 APPPATH\Controllers\LaporanBarang.php(48): view('laporan-barang/create', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+CRITICAL - 2024-07-29 12:04:02 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "laporan-barang/create.php"
+[Method: GET, Route: laporanbarang/create]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('laporan-barang/create.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/create', [], true)
+ 3 APPPATH\Controllers\LaporanBarang.php(48): view('laporan-barang/create', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+CRITICAL - 2024-07-29 12:06:27 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "barang/create.php"
+[Method: GET, Route: laporanbarang/create]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('barang/create.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('barang/create', [], true)
+ 3 APPPATH\Controllers\LaporanBarang.php(53): view('barang/create', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+CRITICAL - 2024-07-29 12:06:46 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "laporan-barang/create.php"
+[Method: GET, Route: laporanbarang/create]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('laporan-barang/create.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/create', [], true)
+ 3 APPPATH\Controllers\LaporanBarang.php(53): view('laporan-barang/create', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+CRITICAL - 2024-07-29 12:07:19 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "laporan-barang/create.php"
+[Method: GET, Route: laporanbarang/create]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('laporan-barang/create.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/create', [], true)
+ 3 APPPATH\Controllers\LaporanBarang.php(53): view('laporan-barang/create', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+CRITICAL - 2024-07-29 12:07:20 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "laporan-barang/create.php"
+[Method: GET, Route: laporanbarang/create]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('laporan-barang/create.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/create', [], true)
+ 3 APPPATH\Controllers\LaporanBarang.php(53): view('laporan-barang/create', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+CRITICAL - 2024-07-29 12:07:20 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "laporan-barang/create.php"
+[Method: GET, Route: laporanbarang/create]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('laporan-barang/create.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/create', [], true)
+ 3 APPPATH\Controllers\LaporanBarang.php(53): view('laporan-barang/create', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+CRITICAL - 2024-07-29 12:07:56 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "laporan-barang/create.php"
+[Method: GET, Route: laporanbarang/create]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('laporan-barang/create.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/create', [], true)
+ 3 APPPATH\Controllers\LaporanBarang.php(58): view('laporan-barang/create', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+CRITICAL - 2024-07-29 12:08:02 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "laporan-barang/create.php"
+[Method: GET, Route: laporanbarang/create]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('laporan-barang/create.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/create', [], true)
+ 3 APPPATH\Controllers\LaporanBarang.php(58): view('laporan-barang/create', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+CRITICAL - 2024-07-29 12:08:25 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "laporan-barang/create.php"
+[Method: GET, Route: laporanbarang/create]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('laporan-barang/create.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/create', [], true)
+ 3 APPPATH\Controllers\LaporanBarang.php(58): view('laporan-barang/create', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+CRITICAL - 2024-07-29 12:08:26 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "laporan-barang/create.php"
+[Method: GET, Route: laporanbarang/create]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('laporan-barang/create.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/create', [], true)
+ 3 APPPATH\Controllers\LaporanBarang.php(58): view('laporan-barang/create', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+CRITICAL - 2024-07-29 12:08:44 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "laporan-barang/create.php"
+[Method: GET, Route: laporanbarang/create]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('laporan-barang/create.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/create', [], true)
+ 3 APPPATH\Controllers\LaporanBarang.php(58): view('laporan-barang/create', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 12:09:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 12:10:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 12:11:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 12:13:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 12:15:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 12:16:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 12:16:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 12:16:57 --> ErrorException: Undefined variable $kategori
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 75.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kategori', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 75)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(58): view('laporan-barang/components/action/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 12:21:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 12:21:46 --> ErrorException: Undefined variable $satuan
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 75.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $satuan', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 75)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(58): view('laporan-barang/components/action/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 12:22:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 12:22:06 --> ErrorException: Undefined variable $satuan
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 75.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $satuan', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 75)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(58): view('laporan-barang/components/action/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 12:22:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 12:22:36 --> ErrorException: Undefined variable $satuan
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 75.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $satuan', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 75)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(58): view('laporan-barang/components/action/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 12:22:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 12:22:58 --> ErrorException: Undefined variable $satuan
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 75.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $satuan', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 75)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(58): view('laporan-barang/components/action/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 12:24:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 12:25:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 12:25:47 --> ErrorException: Undefined variable $satuan
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 75.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $satuan', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 75)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(58): view('laporan-barang/components/action/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 12:26:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 12:26:13 --> ErrorException: Undefined variable $satuan
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 75.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $satuan', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 75)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(58): view('laporan-barang/components/action/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 12:27:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 12:27:37 --> ErrorException: Undefined variable $satuan
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 75.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $satuan', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 75)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(58): view('laporan-barang/components/action/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 12:28:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 12:28:30 --> ErrorException: Undefined variable $satuan
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 75.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $satuan', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 75)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(58): view('laporan-barang/components/action/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 12:29:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 12:29:08 --> ErrorException: Undefined variable $satuan
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 75.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $satuan', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 75)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(58): view('laporan-barang/components/action/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 12:29:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 12:29:11 --> ErrorException: Undefined variable $satuan
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 75.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $satuan', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 75)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(58): view('laporan-barang/components/action/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 12:29:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 12:29:29 --> ErrorException: Undefined variable $satuan
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 75.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $satuan', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 75)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(58): view('laporan-barang/components/action/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 12:29:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 12:29:40 --> ErrorException: Undefined variable $satuan
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 75.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $satuan', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 75)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(56): view('laporan-barang/components/action/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 12:32:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 12:32:16 --> ErrorException: Undefined variable $satuan
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 75.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $satuan', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 75)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(57): view('laporan-barang/components/action/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 12:32:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 12:32:56 --> ErrorException: Undefined variable $satuan
+[Method: GET, Route: laporanbarang/create]
+in APPPATH\Views\laporan-barang\components\action\create.php on line 75.
+ 1 APPPATH\Views\laporan-barang\components\action\create.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $satuan', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php', 75)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\laporan-barang\\components\\action\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('laporan-barang/components/action/create', [], true)
+ 5 APPPATH\Controllers\LaporanBarang.php(57): view('laporan-barang/components/action/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarang->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarang))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-07-29 12:33:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 14:39:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 14:40:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 14:42:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 14:42:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 14:43:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

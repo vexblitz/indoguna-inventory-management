@@ -1,0 +1,283 @@
+INFO - 2024-08-10 14:15:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-10 14:17:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-08-10 14:21:27 --> ErrorException: Undefined variable $total_bk
+[Method: GET, Route: laporan-barang-keluar]
+in APPPATH\Views\lap-barang-keluar\layouts\main.php on line 73.
+ 1 APPPATH\Views\lap-barang-keluar\layouts\main.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total_bk', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\lap-barang-keluar\\layouts\\main.php', 73)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\lap-barang-keluar\\layouts\\main.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('lap-barang-keluar/layouts/main', [], true)
+ 5 APPPATH\Controllers\LaporanBarangKeluar.php(50): view('lap-barang-keluar/layouts/main', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarangKeluar->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarangKeluar))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+CRITICAL - 2024-08-10 14:21:43 --> ErrorException: Undefined variable $barangKeluar
+[Method: GET, Route: laporan-barang-keluar]
+in APPPATH\Views\lap-barang-keluar\layouts\main.php on line 104.
+ 1 APPPATH\Views\lap-barang-keluar\layouts\main.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $barangKeluar', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\lap-barang-keluar\\layouts\\main.php', 104)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\lap-barang-keluar\\layouts\\main.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('lap-barang-keluar/layouts/main', [], true)
+ 5 APPPATH\Controllers\LaporanBarangKeluar.php(50): view('lap-barang-keluar/layouts/main', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarangKeluar->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarangKeluar))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+CRITICAL - 2024-08-10 14:21:44 --> ErrorException: Undefined variable $barangKeluar
+[Method: GET, Route: laporan-barang-keluar]
+in APPPATH\Views\lap-barang-keluar\layouts\main.php on line 104.
+ 1 APPPATH\Views\lap-barang-keluar\layouts\main.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $barangKeluar', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\lap-barang-keluar\\layouts\\main.php', 104)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\lap-barang-keluar\\layouts\\main.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('lap-barang-keluar/layouts/main', [], true)
+ 5 APPPATH\Controllers\LaporanBarangKeluar.php(50): view('lap-barang-keluar/layouts/main', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarangKeluar->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarangKeluar))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+CRITICAL - 2024-08-10 14:22:34 --> ErrorException: Undefined variable $barang
+[Method: GET, Route: laporan-barang-keluar]
+in APPPATH\Views\lap-barang-keluar\layouts\main.php on line 104.
+ 1 APPPATH\Views\lap-barang-keluar\layouts\main.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $barang', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\lap-barang-keluar\\layouts\\main.php', 104)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\lap-barang-keluar\\layouts\\main.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('lap-barang-keluar/layouts/main', [], true)
+ 5 APPPATH\Controllers\LaporanBarangKeluar.php(50): view('lap-barang-keluar/layouts/main', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarangKeluar->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarangKeluar))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+CRITICAL - 2024-08-10 14:22:35 --> ErrorException: Undefined variable $barang
+[Method: GET, Route: laporan-barang-keluar]
+in APPPATH\Views\lap-barang-keluar\layouts\main.php on line 104.
+ 1 APPPATH\Views\lap-barang-keluar\layouts\main.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $barang', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\lap-barang-keluar\\layouts\\main.php', 104)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\lap-barang-keluar\\layouts\\main.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('lap-barang-keluar/layouts/main', [], true)
+ 5 APPPATH\Controllers\LaporanBarangKeluar.php(50): view('lap-barang-keluar/layouts/main', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarangKeluar->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarangKeluar))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+CRITICAL - 2024-08-10 14:22:35 --> ErrorException: Undefined variable $barang
+[Method: GET, Route: laporan-barang-keluar]
+in APPPATH\Views\lap-barang-keluar\layouts\main.php on line 104.
+ 1 APPPATH\Views\lap-barang-keluar\layouts\main.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $barang', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\lap-barang-keluar\\layouts\\main.php', 104)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\lap-barang-keluar\\layouts\\main.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('lap-barang-keluar/layouts/main', [], true)
+ 5 APPPATH\Controllers\LaporanBarangKeluar.php(50): view('lap-barang-keluar/layouts/main', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarangKeluar->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarangKeluar))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+CRITICAL - 2024-08-10 14:22:35 --> ErrorException: Undefined variable $barang
+[Method: GET, Route: laporan-barang-keluar]
+in APPPATH\Views\lap-barang-keluar\layouts\main.php on line 104.
+ 1 APPPATH\Views\lap-barang-keluar\layouts\main.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $barang', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\lap-barang-keluar\\layouts\\main.php', 104)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\lap-barang-keluar\\layouts\\main.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('lap-barang-keluar/layouts/main', [], true)
+ 5 APPPATH\Controllers\LaporanBarangKeluar.php(50): view('lap-barang-keluar/layouts/main', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarangKeluar->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarangKeluar))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+CRITICAL - 2024-08-10 14:23:13 --> ErrorException: Undefined array key "kode_transaksi"
+[Method: GET, Route: laporan-barang-keluar]
+in APPPATH\Views\lap-barang-keluar\layouts\main.php on line 107.
+ 1 APPPATH\Views\lap-barang-keluar\layouts\main.php(107): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kode_transaksi"', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\lap-barang-keluar\\layouts\\main.php', 107)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\lap-barang-keluar\\layouts\\main.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('lap-barang-keluar/layouts/main', [], true)
+ 5 APPPATH\Controllers\LaporanBarangKeluar.php(50): view('lap-barang-keluar/layouts/main', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarangKeluar->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarangKeluar))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+CRITICAL - 2024-08-10 14:23:54 --> ErrorException: Undefined array key "kode_transaksi"
+[Method: GET, Route: laporan-barang-keluar]
+in APPPATH\Views\lap-barang-keluar\layouts\main.php on line 107.
+ 1 APPPATH\Views\lap-barang-keluar\layouts\main.php(107): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kode_transaksi"', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\lap-barang-keluar\\layouts\\main.php', 107)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\lap-barang-keluar\\layouts\\main.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('lap-barang-keluar/layouts/main', [], true)
+ 5 APPPATH\Controllers\LaporanBarangKeluar.php(50): view('lap-barang-keluar/layouts/main', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarangKeluar->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarangKeluar))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+CRITICAL - 2024-08-10 14:26:28 --> ErrorException: Undefined variable $barang
+[Method: GET, Route: laporan-barang-keluar]
+in APPPATH\Views\lap-barang-keluar\layouts\main.php on line 104.
+ 1 APPPATH\Views\lap-barang-keluar\layouts\main.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $barang', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\lap-barang-keluar\\layouts\\main.php', 104)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\lap-barang-keluar\\layouts\\main.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('lap-barang-keluar/layouts/main', [], true)
+ 5 APPPATH\Controllers\LaporanBarangKeluar.php(56): view('lap-barang-keluar/layouts/main', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarangKeluar->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarangKeluar))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+CRITICAL - 2024-08-10 14:26:29 --> ErrorException: Undefined variable $barang
+[Method: GET, Route: laporan-barang-keluar]
+in APPPATH\Views\lap-barang-keluar\layouts\main.php on line 104.
+ 1 APPPATH\Views\lap-barang-keluar\layouts\main.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $barang', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\lap-barang-keluar\\layouts\\main.php', 104)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\lap-barang-keluar\\layouts\\main.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('lap-barang-keluar/layouts/main', [], true)
+ 5 APPPATH\Controllers\LaporanBarangKeluar.php(56): view('lap-barang-keluar/layouts/main', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarangKeluar->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarangKeluar))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+CRITICAL - 2024-08-10 14:26:30 --> ErrorException: Undefined variable $barang
+[Method: GET, Route: laporan-barang-keluar]
+in APPPATH\Views\lap-barang-keluar\layouts\main.php on line 104.
+ 1 APPPATH\Views\lap-barang-keluar\layouts\main.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $barang', 'C:\\xampp\\htdocs\\gudang\\app\\Views\\lap-barang-keluar\\layouts\\main.php', 104)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\gudang\\app\\Views\\lap-barang-keluar\\layouts\\main.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('lap-barang-keluar/layouts/main', [], true)
+ 5 APPPATH\Controllers\LaporanBarangKeluar.php(56): view('lap-barang-keluar/layouts/main', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarangKeluar->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarangKeluar))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+ERROR - 2024-08-10 14:27:01 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\gudang\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\gudang\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'indogunadb', 3306, '', 0)
+#1 C:\xampp\htdocs\gudang\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\gudang\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\gudang\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\gudang\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\gudang\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\gudang\app\Controllers\LaporanBarangKeluar.php(99): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\gudang\app\Controllers\LaporanBarangKeluar.php(29): App\Controllers\LaporanBarangKeluar->generateKodeTransaksi('2024-08-10')
+#8 C:\xampp\htdocs\gudang\system\CodeIgniter.php(933): App\Controllers\LaporanBarangKeluar->index()
+#9 C:\xampp\htdocs\gudang\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarangKeluar))
+#10 C:\xampp\htdocs\gudang\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\gudang\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\gudang\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\gudang\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\gudang\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\gudang\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\gudang\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\gudang\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\gudang\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\gudang\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\gudang\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\gudang\app\Controllers\LaporanBarangKeluar.php(99): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\gudang\app\Controllers\LaporanBarangKeluar.php(29): App\Controllers\LaporanBarangKeluar->generateKodeTransaksi('2024-08-10')
+#7 C:\xampp\htdocs\gudang\system\CodeIgniter.php(933): App\Controllers\LaporanBarangKeluar->index()
+#8 C:\xampp\htdocs\gudang\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarangKeluar))
+#9 C:\xampp\htdocs\gudang\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\gudang\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\gudang\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\gudang\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\gudang\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2024-08-10 14:27:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: laporan-barang-keluar]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `barang_keluar`
+WHERE `kode_transaksi` LIKE :kode_transaksi:
+ORDER BY `id` DESC
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\LaporanBarangKeluar.php(99): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Controllers\LaporanBarangKeluar.php(29): App\Controllers\LaporanBarangKeluar->generateKodeTransaksi('2024-08-10')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarangKeluar->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarangKeluar))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+CRITICAL - 2024-08-10 14:28:47 --> TypeError: Unsupported operand types: string + int
+[Method: GET, Route: laporan-barang-keluar]
+in APPPATH\Views\lap-barang-keluar\layouts\main.php on line 106.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('lap-barang-keluar/layouts/main', [], true)
+ 4 APPPATH\Controllers\LaporanBarangKeluar.php(56): view('lap-barang-keluar/layouts/main', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanBarangKeluar->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanBarangKeluar))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+WARNING - 2024-08-10 14:30:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\LaporanBarangKeluar::$barangModel is deprecated in APPPATH\Controllers\LaporanBarangKeluar.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\LaporanBarangKeluar->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+WARNING - 2024-08-10 14:31:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\LaporanBarangKeluar::$barangModel is deprecated in APPPATH\Controllers\LaporanBarangKeluar.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\LaporanBarangKeluar->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\gudang\\public\\index.php')
+INFO - 2024-08-10 14:33:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-10 14:33:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-10 14:33:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-10 14:33:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-10 14:33:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-10 14:33:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-10 14:34:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-10 14:58:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-10 14:58:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-10 14:58:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-10 14:58:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-10 14:58:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-10 14:58:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-10 15:12:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
